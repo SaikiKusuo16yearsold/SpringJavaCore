@@ -10,7 +10,7 @@ import java.util.Set;
 @Service
 @SessionScope
 public class ShoppingCart {
-    public Set<Integer> shopingCatrs = new HashSet<>(List.of());
+    private Set<Integer> shopingCatrs = new HashSet<>(List.of());
 
     public void addProduct(List<Integer> numbers) {
         numbers.stream().forEach((Integer number) -> {
